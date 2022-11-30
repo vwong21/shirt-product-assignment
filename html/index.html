@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 07 | Vincent Wong</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/jquery3.6.1.js" defer></script>
+    <script src="../scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Assignment 7</h1>
+    </header>
+    <h2>Product: Cotton T-Shirt</h2>
+    <main>
+        <section>
+            <article id="black-shirt-container" class="shirt-container">
+                <img src="../product-images/t-shirt-black-no-model.jpg" alt="Black Shirt No Model" class="main-images"
+                    id="black-image01">
+                <img src="../product-images/t-shirt-black-front.jpg" alt="Black Shirt Front" class="main-images"
+                    id="black-image02">
+                <img src="../product-images/t-shirt-black-back.jpg" alt="Black Shirt back" class="main-images"
+                    id="black-image03">
+                <div class="img-container">
+                    <a href="#black-image01" class="active"><img src="../product-images/t-shirt-black-no-model.jpg"
+                            alt="Black Shirt No Model"></a>
+                    <a href="#black-image02"><img src="../product-images/t-shirt-black-front.jpg"
+                            alt="Black Shirt Front"></a>
+                    <a href="#black-image03"><img src="../product-images/t-shirt-black-back.jpg"
+                            alt="Black Shirt back"></a>
+                </div>
+            </article>
+            <article id="red-shirt-container" class="shirt-container">
+                <img src="../product-images/t-shirt-red-no-model.jpg" alt="Red Shirt No Model" class="main-images"
+                    id="red-image01">
+                <img src="../product-images/t-shirt-red-front.jpg" alt="Red Shirt Front" class="main-images"
+                    id="red-image02">
+                <img src="../product-images/t-shirt-red-back.jpg" alt="Red Shirt back" class="main-images"
+                    id="red-image03">
+                <div class="img-container">
+                    <a href="#red-image01" class="active"><img src="../product-images/t-shirt-red-no-model.jpg"
+                            alt="Red Shirt No Model"></a>
+                    <a href="#red-image02"><img src="../product-images/t-shirt-red-front.jpg" alt="Red Shirt Front"></a>
+                    <a href="#red-image03"><img src="../product-images/t-shirt-red-back.jpg" alt="Red Shirt back"></a>
+                </div>
+            </article>
+            <article id="grey-shirt-container" class="shirt-container">
+                <img src="../product-images/t-shirt-grey-no-model.jpg" alt="grey Shirt No Model" class="main-images"
+                    id="grey-image01">
+                <img src="../product-images/t-shirt-grey-front.jpg" alt="grey Shirt Front" class="main-images"
+                    id="grey-image02">
+                <img src="../product-images/t-shirt-grey-back.jpg" alt="grey Shirt back" class="main-images"
+                    id="grey-image03">
+                <div class="img-container">
+                    <a href="#grey-image01" class="active"><img src="../product-images/t-shirt-grey-no-model.jpg"
+                            alt="Grey Shirt No Model"></a>
+                    <a href="#grey-image02"><img src="../product-images/t-shirt-grey-front.jpg"
+                            alt="Grey Shirt Front"></a>
+                    <a href="#grey-image03"><img src="../product-images/t-shirt-grey-back.jpg"
+                            alt="Grey Shirt back"></a>
+                </div>
+            </article>
+        </section>
+        <section>
+            <form action=" thank-you.html" method="post">
+                <article class="form-article" id="price-qty">
+                    <p><strong>Price: </strong>$20.00</p>
+                    <label for="quantity">Quantity</label>
+                    <input type="number" name="quantity" id="quantity" value="1" min="1" autocomplete="off">
+                    <p><strong>Total: </strong><span id="total-cost">$20.00</span< /p>
+                </article>
+                <article class="form-article" id="color-container">
+                    <p><strong>Color: </strong>Black</p>
+                    <div>
+                        <input type="radio" id="black" name="shirt-color" value="black" checked>
+                        <label for="black">Black</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="red" name="shirt-color" value="red">
+                        <label for="red">Red</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="grey" name="shirt-color" value="grey">
+                        <label for="grey">Grey</label>
+                    </div>
+
+                </article>
+                <article class="form-article" id="shirt-size">
+                    <p><strong>Size: </strong><span id="choose-size">Choose...</span></p>
+                    <div>
+                        <input type="radio" id="small-s" name="shirt-size" value="small-s" class="sizes">
+                        <label for="small-s">Small S</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium-m" name="shirt-size" value="medium-m" class="sizes">
+                        <label for="medium-m">Medium M</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="large-l" name="shirt-size" value="large-l" class="sizes">
+                        <label for="large-l">Large L</label>
+                    </div>
+                </article>
+                <article class="form-article" id="submit-container">
+                    <button type="submit" id="submit-btn">Choose a size</button>
+                </article>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

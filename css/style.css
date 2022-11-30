@@ -1,0 +1,144 @@
+@font-face {
+    font-family: century-gothic;
+    src: url(../fonts/Century\ Gothic.ttf);
+}
+
+body{
+    font-family: century-gothic;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+header {
+    background-color: darkcyan;
+    padding: 30px 0;
+}
+
+header h1 {
+    margin: 0 auto;
+    width: 60%;
+    color: white;
+}
+
+h2 {
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 50vw;
+    margin: 0 auto;
+}
+.shirt-container {
+    display: flex;
+    flex-flow: column;
+    width: 435px;
+    padding: 20px;
+    border: 1px black solid;
+}
+
+.img-container {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 435px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    gap: 50px;
+    width: 15vw;
+}
+
+#price-qty {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    border: 1px black solid;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+#price-qty #quantity {
+    width: 10%;
+}
+
+#color-container {
+    border: 1px black solid;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+#shirt-size {
+    border: 1px black solid;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+#submit-btn {
+    width: 50%;
+    height: 50px;
+}
+
+@media screen and (max-width: 1500px) {
+    main {
+        width: 70vw;
+    }
+
+    #submit-btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    main {
+        width: 100vw;
+        flex-flow: column;
+        align-items: center;
+        gap: 30px;
+        justify-content: space-around;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #submit-container {
+        width: 100%;
+        grid-column: 1/4;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    form {
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        width: 90%;
+    }
+
+    .form-article {
+        width: 100%;
+    }
+
+    .shirt-container {
+        width: 80vw;
+    }
+
+    .img-container {
+        width: 100%;
+    }
+}
